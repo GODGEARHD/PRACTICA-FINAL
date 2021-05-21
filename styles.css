@@ -9,6 +9,40 @@ body {
     background-color: black;
 }
 
+.row2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.jumbotron2 {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    width: 31.3%;
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Para Móviles/Tablets: */
+    [class*="jumbotron2"] {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Para Móviles/Tablets: */
+    [class*="row2"] {
+      width: 100%;
+    }
+}
+
 .text-black {
     color: black;
 }
@@ -122,10 +156,6 @@ body {
     [class*="jumbotron-2"] {
       width: 100%;
     }
-}
-
-.jumbotron.jumbotron-2 {
-    width: 31.3%;
 }
 
 #formulario {
