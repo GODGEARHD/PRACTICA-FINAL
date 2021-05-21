@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>WebServlet</title>
+		<script>
+            function validateForm() {
+                var w = document.forms["myForm"]["matricula"].value;
+                var x = document.forms["myForm"]["marca"].value;
+                var y = document.forms["myForm"]["modelo"].value;
+                var z = document.forms["myForm"]["color"].value;
+              if ((w == "") || (x == "") || (y == "") || (z == "")) {
+                alert("Every field must be filled out");
+                return false;
+              }
+            }
+		</script>
+	</head>
+	<body>
+		<h1>Escriba los datos que desea introducir a la Base de Datos</h1>
+		
+		<a href="http://localhost:8080/webServlet/WebServlet">WebServlet</a>
+		<br/>
+		<br/>
+		<hr/>
+		<br/>
+		<form name="form1" method="get" action="http://localhost:8080/webServlet/WebServlet" onsubmit="return validateForm1()">
+			Matrícula: <input type="text" style="text-transform:uppercase;" name="matricula"><br><br>
+	        Marca: <input type="text" style="text-transform:uppercase;" name="marca"><br><br>
+	        Modelo: <input type="text" style="text-transform:uppercase;" name="modelo"><br><br>
+	        Color: <input type="text" style="text-transform:uppercase;" name="color"><br><br>
+	        <input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
