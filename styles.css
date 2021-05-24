@@ -33,6 +33,39 @@ body {
     /* Para Móviles/Tablets: */
     [class*="jumbotron2"] {
       width: 100%;
+      margin-left: 2.5rem;
+      margin-right: 0;
+    }
+}
+
+.margin-left {
+    margin-left: .45rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Para Móviles/Tablets: */
+    [class*="margin-left"] {
+      margin-left: 1rem;
+    }
+}
+
+.margin-left-2 {
+    margin-left: .45rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Para Móviles/Tablets: */
+    [class*="margin-left-2"] {
+      margin-left: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Para Móviles/Tablets: */
+    [class*="col-md-8-2"] {
+      width: 100%;
+      margin-left: 1.5rem;
+      margin-right: 0;
     }
 }
 
